@@ -85,7 +85,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         </div>
         <div class="w3-clear"></div>
-        <h4><a href="request.php" id="request">Request</h4>
+        <h4><a href="request.php" class="sidebars">Request</h4>
       </div>
     </div>
 
@@ -100,7 +100,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         </div>
         <div class="w3-clear"></div>
-        <h4><a href="volunteers.php">Volunteers</h4>
+        <h4><a href="volunteers.php" class="sidebars">Volunteers</h4>
       </div>
     </div>
     
@@ -115,7 +115,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         </div>
         <div class="w3-clear"></div>
-        <h4><a href="needypeople.php">Needy People</h4>
+        <h4><a href="needypeople.php" class="sidebars">Needy People</h4>
       </div>
     </div>
     
@@ -130,7 +130,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         </div>
         <div class="w3-clear"></div>
-        <h4><a href="wip.php">WIP</h4>
+        <h4><a href="wip.php" class="sidebars">WIP</h4>
       </div>
     </div>
   </div>
