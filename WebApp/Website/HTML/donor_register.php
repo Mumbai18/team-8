@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Sign Up as a Donor</title>
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="/CSS/custom.css">
 </head>
 <body>
 	
