@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Annadhan Admin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -31,13 +31,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container w3-row">
     <div class="w3-col s4">
-      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+<!--       <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px"> -->
     </div>
     <div class="w3-col s8 w3-bar">
       <span>Welcome, <strong>Admin</strong></span><br>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a> -->
     </div>
   </div>
   <hr>
@@ -51,10 +51,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="volunteers.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-eye fa-fw"></i>&nbsp; Volunteers</a>
     <a href="needypeople.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-users fa-fw"></i>&nbsp; Needy People</a>
     <a href="wip.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-bullseye fa-fw"></i>&nbsp; WIP</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>&nbsp; General</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>&nbsp; History</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a><br><br>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a><br><br> -->
   </div>
 </nav>
 
