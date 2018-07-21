@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Sign Up as a Donor</title>
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="/team-8/WebApp/Website/CSS/custom.css">
 </head>
 <body>
 	
@@ -33,11 +33,11 @@
 			<input type="password" name="password_2">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="btn" name="reg_user">Register</button>
+			<label>Upload Image</label>
+			<input type="file" name="fileToUpload" id="fileToUpload">
 		</div>
 		<div class="input-group">
-			<label>Upload Image</label>
-			<input type="password" name="password_2">
+			<button type="submit" class="btn" name="reg_user">Register</button>
 		</div>
 		<p>
 			Already a member? <a href="login.php">Sign in</a>
