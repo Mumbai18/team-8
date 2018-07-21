@@ -27,7 +27,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Annadhan Admin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -57,13 +57,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container w3-row">
     <div class="w3-col s4">
-      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+<!--       <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px"> -->
     </div>
     <div class="w3-col s8 w3-bar">
-      <span>Welcome, <strong>Mike</strong></span><br>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <span>Welcome, <strong>Admin</strong></span><br>
+      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a> -->
     </div>
   </div>
   <hr>
@@ -72,15 +72,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
-    <a href="admin.php" class="w3-bar-item w3-button w3-padding sidebar " onclick="changeColor()"><i class="fa fa-users fa-fw"></i>&nbsp; Overview</a>
+    <a href="admin.php" class="w3-bar-item w3-button w3-padding sidebar" onclick="changeColor()"><i class="fa fa-users fa-fw"></i>&nbsp; Overview</a>
     <a href="request.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-comment fa-fw"></i>&nbsp; Request</a>
-    <a href="volunteers_dashboard.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-eye fa-fw"></i>&nbsp; Volunteers</a>
+    <a href="volunteers_dashboard.php" class="w3-bar-item w3-button w3-padding w3-blue" ><i class="fa fa-eye fa-fw"></i>&nbsp; Volunteers</a>
     <a href="needypeople.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-users fa-fw"></i>&nbsp; Needy People</a>
-    <a href="wip.php" class="w3-bar-item w3-button w3-padding w3-blue"  ><i class="fa fa-bullseye fa-fw"></i>&nbsp; WIP</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
+    <a href="wip.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-bullseye fa-fw"></i>&nbsp; WIP</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>&nbsp; General</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>&nbsp; History</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a><br><br>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a><br><br> -->
   </div>
 </nav>
 
@@ -165,15 +165,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
 
-<!--       <div class="w3-third">
-        <h5>Regions</h5>
-        <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
-      </div> -->
-
-
-      <div class="w3-threequarter">
-        <h5>Needy People Database</h5>
+       <div class="w3-threequarter">
+        <h5>Donors requests</h5>
         <table class="w3-table w3-striped w3-white">
+          <tr>
+            <th>Name of Donor</th>
+            <th><i>Address</i></th>
+            <th>Type of Food</th>
+            <th>Acceptance</th>
+          </tr>
+<?php foreach ($students as $key => $value) {
+      ?>
+      <tr>
+        <td><?php echo($value);?></td>
+        <td><?php echo($key);?></td>
+      </tr>
+      <?php
+      }
+      ?>
+
           <tr>
             <th>Area</th>
             <th>Approx People</th>
@@ -188,7 +198,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       }
       ?>
 
-          
           <tr>
             <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
             <td>Database error.</td>
@@ -223,9 +232,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-
   <hr>
-  <div class="w3-container">
+
+
+<!--   <div class="w3-container">
     <h5>General Stats</h5>
     <p>New Visitors</p>
     <div class="w3-grey">
@@ -293,8 +303,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </ul>
   </div>
   <hr>
+ -->
 
-  <div class="w3-container">
+
+ <!--  <div class="w3-container">
     <h5>Recent Comments</h5>
     <div class="w3-row">
       <div class="w3-col m2 text-center">
@@ -304,8 +316,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
         <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
       </div>
-    </div>
+    </div> -->
 
+
+<!-- 
     <div class="w3-row">
       <div class="w3-col m2 text-center">
         <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
@@ -340,14 +354,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-
+ -->
   <!-- Footer -->
+  
   <footer class="w3-container w3-padding-16 w3-light-grey">
-    <h4>FOOTER</h4>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<!--     <h4>FOOTER</h4>-->  
+  <p>What's left is not over</p>
   </footer>
-
   <!-- End page content -->
+  
 </div>
 
 <script>

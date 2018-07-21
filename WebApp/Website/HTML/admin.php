@@ -48,7 +48,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
     <a href="admin.php" class="w3-bar-item w3-button w3-padding sidebar w3-blue" onclick="changeColor()"><i class="fa fa-users fa-fw"></i>&nbsp; Overview</a>
     <a href="request.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-comment fa-fw"></i>&nbsp; Request</a>
-    <a href="volunteers.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-eye fa-fw"></i>&nbsp; Volunteers</a>
+    <a href="volunteers_dashboard.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-eye fa-fw"></i>&nbsp; Volunteers</a>
     <a href="needypeople.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-users fa-fw"></i>&nbsp; Needy People</a>
     <a href="wip.php" class="w3-bar-item w3-button w3-padding " ><i class="fa fa-bullseye fa-fw"></i>&nbsp; WIP</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
@@ -100,7 +100,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         </div>
         <div class="w3-clear"></div>
-        <h4><a href="volunteers.php" class="sidebars">Volunteers</h4>
+        <h4><a href="volunteers_dashboard.php" class="sidebars">Volunteers</h4>
       </div>
     </div>
     
@@ -138,10 +138,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
+
+      <!-- <div class="w3-third">
         <h5>Regions</h5>
         <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
-      </div>
+      </div> -->
+      
       <div class="w3-twothird">
         <h5>Feeds</h5>
         <table class="w3-table w3-striped w3-white">

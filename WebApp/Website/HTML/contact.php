@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/team-8/WebApp/Website/CSS/login.css">
 
-	<link rel="stylesheet" type="text/css" href="/team-8/WebApp/Website/CSS/login.css">
 </head>
 <body>
 
@@ -39,33 +39,28 @@
 
 <div class="container" id="loginform">
   <form action="/action_page.php">
+
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="comment">Contact Details</label>
+      <textarea class="form-control" rows="1" id="comment">Phone No: 8087742996</textarea>
+      <textarea class="form-control" rows="1" id="comment">Email id: gurbanipradeep@gmail.com</textarea>
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+    
+     </form>
 </div>
 
 
 <!--  <div class="container">
- 	<div class="row">
- 		<div class="col-lg-12">
- 			<div class="content">
- 				<h1>Annadhan</h1>
- 				<h3>What's left is not over</h3>
- 				<hr>
- 				<button class="btn btn-default btn-lg"><i class="fa fa-paw fa-fw"></i> Get Started!</button>
- 			</div>
- 		</div>
- 	</div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="content">
+                <h1>Annadhan</h1>
+                <h3>What's left is not over</h3>
+                <hr>
+                <button class="btn btn-default btn-lg"><i class="fa fa-paw fa-fw"></i> Get Started!</button>
+            </div>
+        </div>
+    </div>
  </div>
  -->
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
