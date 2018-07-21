@@ -1,4 +1,30 @@
 
+<?php
+  $cars = array('i20','mercedes','audi','bmw');
+  /*var_dump($cars);
+
+  echo('<br>'.$cars[0]); #string concatenation using .
+  echo("<br>$cars[2]"); #no string concatenation required
+
+  $cars[2] = 'Audi';
+
+  echo('<br>');
+  var_dump($cars);
+
+  echo('<br>'.count($cars));*/
+
+  #associative array as in dictionary in python where index we can choose any data type and something unique
+  $students = array(11 => 'divit', 45 => 'jane', 56 => 'rahul', 78 => 'ruman');
+  echo($students[45]);
+  $students[45] = 'Jill';
+  /*var_dump($students);
+  echo('<br>');
+  foreach($students as $key => $value){
+    echo("$key&nbsp");
+    echo("$value<br>");
+  } */
+?>
+
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
@@ -138,18 +164,31 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
+
+<!--       <div class="w3-third">
         <h5>Regions</h5>
         <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
-      </div>
-      <div class="w3-twothird">
-        <h5>Feeds</h5>
+      </div> -->
+
+
+      <div class="w3-threequarter">
+        <h5>Needy People Database</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <th>Area</th>
+            <th>Approx People</th>
           </tr>
+<?php foreach ($students as $key => $value) {
+      ?>
+      <tr>
+        <td><?php echo($value);?></td>
+        <td><?php echo($key);?></td>
+      </tr>
+      <?php
+      }
+      ?>
+
+          
           <tr>
             <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
             <td>Database error.</td>
@@ -184,6 +223,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
+
   <hr>
   <div class="w3-container">
     <h5>General Stats</h5>
