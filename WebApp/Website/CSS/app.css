@@ -1,7 +1,7 @@
 body {
-    background-image: url("/team-8/WebApp/images/Annadhan.jpg");
+    background-image: url("/team-8/WebApp/Website/images/Annadhan.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
 body,
@@ -35,3 +35,15 @@ hr {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+#login1{
+  padding-top: 10px;
+}
+.btn{
+  background-color:grey !important;
+}
+/*
+.btn-primary,.btn,.dropdown-toggle{
+  padding-top: 5px;
+  caret-color: green;
+}
+*/
