@@ -7,13 +7,29 @@
   const DEFAULT_TOKEN = "6maU75HwNOBjZblwKkWLjtztdOZQ7NcWnuSZkZ11";
   const DEFAULT_PATH = '/admin';
   $firebase = new \Firebase\FirebaseLib(DEFAULT_URL, DEFAULT_TOKEN);
-  $i=1;
-  $result = $firebase->get("admin/$i");
+
+  $result = $firebase->get("admin/3");
+  echo($result);
   $result = str_replace('{', '', $result);
   $result = str_replace('}', '', $result);
   $value = explode(',',$result,2);
-  echo($value[0][12]);
-  echo($value[0][12]);
+  for($k=0;$k<sizeof($value);$k++){
+    for($j=12;$j<strlen($value[$k]);$j++)
+    {
+      if($k==0){
+        $password1=$password1+$value[$k][$j];
+      }
+      if($k==1){
+        $user_name1=$user_name1+$value[$k][$j];
+      }
+    }
+  }
+  if($user_name1 === null && $password1 === null)
+  {
+      header('Location: /team-8/WebApp/Website/admin.php?invalid=1');
+  }else {
+      header('Location: /team-8/WebApp/Website/admin.php?$user_name='.$user_name1);
+  }
   // $firebase.child(first_child_node).child(second_child_node).getValue();
 
   /*
