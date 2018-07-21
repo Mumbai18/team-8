@@ -185,7 +185,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
   <hr>
-  <div class="w3-container">
+
+
+<!--   <div class="w3-container">
     <h5>General Stats</h5>
     <p>New Visitors</p>
     <div class="w3-grey">
@@ -253,8 +255,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </ul>
   </div>
   <hr>
+ -->
 
-  <div class="w3-container">
+
+ <!--  <div class="w3-container">
     <h5>Recent Comments</h5>
     <div class="w3-row">
       <div class="w3-col m2 text-center">
@@ -264,8 +268,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
         <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
       </div>
-    </div>
+    </div> -->
 
+
+<!-- 
     <div class="w3-row">
       <div class="w3-col m2 text-center">
         <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
@@ -300,14 +306,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-
+ -->
   <!-- Footer -->
+  
   <footer class="w3-container w3-padding-16 w3-light-grey">
-    <h4>FOOTER</h4>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<!--     <h4>FOOTER</h4>-->  
+  <p>What's left is not over</p>
   </footer>
-
   <!-- End page content -->
+  
 </div>
 
 <script>
