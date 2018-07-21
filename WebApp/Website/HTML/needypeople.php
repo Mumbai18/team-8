@@ -35,7 +35,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/team-8/WebApp/Website/CSS/request.css">
-
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "",
+    authDomain: "cfg18-a0b02.firebaseapp.com",
+    databaseURL: "https://cfg18-a0b02.firebaseio.com",
+    projectId: "cfg18-a0b02",
+    storageBucket: "cfg18-a0b02.appspot.com",
+    messagingSenderId: "686911033304"
+  };
+  firebase.initializeApp(config);
+</script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -174,12 +186,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
       <div class="w3-threequarter">
         <h5>Needy People Database</h5>
-        <table class="w3-table w3-striped w3-white">
+        <table class="w3-table w3-striped w3-white" id="fbtable">
           <tr>
-            <th>Area</th>
-            <th>Approx People</th>
+            <th>password</th>
+            <th>user_name</th>
           </tr>
-<?php foreach ($students as $key => $value) {
+<!-- <?php foreach ($students as $key => $value) {
       ?>
       <tr>
         <td><?php echo($value);?></td>
@@ -189,7 +201,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       }
       ?>
 
+ -->
 
+        <script type="text/javascript">
+          var database = firebase.database():
+          database.ref().once('value', function(snapshot){
+            if(snapshot.exists()){
+              snapshot.forEach(function(data){
+                var val = data.val();
+                content += '<tr>';
+                content += '<td>val.password' + '</td>';
+                content += '<td>val.user_name' + '</td>';
+                content += '<tr>';
+              });
+              $('#fbtable').append(content);
+            }
+          });
+        </script>
           <tr>
             <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
             <td>Database error.</td>
