@@ -60,7 +60,7 @@
    <?php echo($donorcontact);?>
     </div>
 
-    <a type="btn" class="btn btn-default" href="#">Edit details</a>
+    
   </form>
 </div>
 

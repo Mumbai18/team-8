@@ -163,6 +163,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h5>Needy People Table</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
+          <th>ID</th>
             <th>Area</th>
             <th>Approx Needy Population</th>
           </tr>

@@ -10,7 +10,6 @@
     $query = "select donor_id from donor where donor_name = '$donorname'";
     $results = $conn -> query($query);
     $row = $results -> fetch_assoc();
-    echo($row);
 
   }
 ?>
