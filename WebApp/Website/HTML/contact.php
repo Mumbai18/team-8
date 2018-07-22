@@ -23,9 +23,9 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li class="active"><a href="contact.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="signup">Signup  <i class="fa fa-user-plus"></i></a></li>
