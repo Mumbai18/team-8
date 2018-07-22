@@ -1,7 +1,8 @@
-
+<?php
+?>
 <!DOCTYPE html>
 <html>
-<title>Annadhan Admin</title>
+<title>Admin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -67,22 +68,20 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- !DONOR CONTENT! -->
 
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-  <a name="donors"></a>
-  <div class="w3-panel">
-    <div class="w3-row-padding">
-      <div>
-        <h5>Donor Table</h5>
-        <table class="w3-table w3-striped w3-white">
-          <tr>
-            <th>DID</th>
-            <th>Donor Name</th>
-            <th>Address</th>
-            <th>Contact</th>
-          </tr>
-          <tr>
-          </tr>
-        </table>
+  <div class="w3-row-padding w3-margin-bottom">
+
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+
+<!-- Add the Requests of Donors -->
+          <h3><?php ?></h3>
+
+        </div>
+        <div class="w3-clear"></div>
+        <h4><a href="request.php" class="sidebars">Request</h4>
       </div>
     </div>
   </div>
@@ -110,6 +109,36 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
           <tr>
           </tr>
         </table>
+      </div>
+    </div>
+
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+
+<!-- Add the Total needy people -->
+          <h3><?php ?></h3>
+
+        </div>
+        <div class="w3-clear"></div>
+        <h4><a href="needypeople.php" class="sidebars">Needy People</h4>
+      </div>
+    </div>
+
+
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+
+<!-- Add the Work in progress value -->
+          <h3><?php ?></h3>
+
+        </div>
+        <div class="w3-clear"></div>
+        <h4><a href="wip.php" class="sidebars">WIP</h4>
       </div>
     </div>
   </div>

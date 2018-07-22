@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+}
+img{
+  width: 700px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+form{
+  margin-top:  20px;
+  text-align: center;
+}
+.form-element{
+  margin-bottom: 20px;
+}

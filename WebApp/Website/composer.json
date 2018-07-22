@@ -1,5 +1,12 @@
 {
+    "name": "divit/website",
     "require": {
-        "ktamas77/firebase-php": "dev-master"
-    }
+        "twilio/sdk": "^5.20"
+    },
+    "authors": [
+        {
+            "name": "divitk",
+            "email": "divitkarmiani1998@gmail.com"
+        }
+    ]
 }
