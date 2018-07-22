@@ -3,7 +3,7 @@
 <html>
 <head>
 	
-	<title>Login to book your LuCAR now!</title>
+	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
