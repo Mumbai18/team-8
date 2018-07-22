@@ -1,3 +1,8 @@
 #loginform{
   margin: 75px 75px;
 }
+
+.form-control {
+	width: 75%;
+	margin: 0 auto;
+}
