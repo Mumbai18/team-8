@@ -112,7 +112,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </header>
 
   <div class="w3-row-padding w3-margin-bottom">
-    
+
 
     <div class="w3-quarter">
       <div class="w3-container w3-red w3-padding-16">
@@ -142,7 +142,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h4><a href="volunteers_dashboard.php" class="sidebars">Volunteers</h4>
       </div>
     </div>
-    
+
 
     <div class="w3-quarter">
       <div class="w3-container w3-teal w3-padding-16">
@@ -157,7 +157,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h4><a href="needypeople.php" class="sidebars">Needy People</h4>
       </div>
     </div>
-    
+
 
     <div class="w3-quarter">
       <div class="w3-container w3-orange w3-text-white w3-padding-16">
@@ -201,7 +201,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
           }
           ?>
 
- 
+
 
         <!-- <script type="text/javascript">
           var database = firebase.database():
