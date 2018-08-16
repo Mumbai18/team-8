@@ -73,7 +73,7 @@ class KeyParserTest extends \PHPUnit_Framework_TestCase
 
         $keyContent = ''
                       . ''
-                      . 'ruiI2tsEdGFTLTsy***REMOVED***';
+                      . 'ruiI2tsEdGFTLTsyU+GeRqC7zN0aTnTQajarUylKJ3UWr/r1kg==';
 
         $this->privateKeySerializer->expects($this->once())
                                    ->method('parse')
@@ -117,8 +117,8 @@ class KeyParserTest extends \PHPUnit_Framework_TestCase
     {
         $publicKey = $this->getMock(PublicKeyInterface::class);
 
-        $keyContent = '***REMOVED***'
-                      . 'd0wxa2iFruiI2tsEdGFTLTsy***REMOVED***';
+        $keyContent = ''
+                      . '';
 
         $this->publicKeySerializer->expects($this->once())
                                   ->method('parse')
@@ -155,10 +155,10 @@ class KeyParserTest extends \PHPUnit_Framework_TestCase
     private function getPrivateKey()
     {
         return new Key(
-            "***REMOVED***\n"
-            . "***REMOVED***\n"
-            . "***REMOVED***\n"
-            . "***REMOVED***\n"
+            "***REMOVED***"
+            . "CqGSM49\n"
+            . ""
+            . ""
             . ""
         );
     }
@@ -170,8 +170,8 @@ class KeyParserTest extends \PHPUnit_Framework_TestCase
     {
         return new Key(
             "***REMOVED***\n"
-            . "***REMOVED***\n"
-            . "d0wxa2iFruiI2tsEdGFTLTsy***REMOVED***\n"
+            . "\n"
+            . "\n"
             . ""
         );
     }
