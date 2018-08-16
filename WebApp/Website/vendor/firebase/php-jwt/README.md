@@ -67,29 +67,10 @@ Example with RS256 (openssl)
 use \Firebase\JWT\JWT;
 
 $privateKey = <<<EOD
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
 
 EOD;
 
 $publicKey = <<<EOD
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
 
 EOD;
 

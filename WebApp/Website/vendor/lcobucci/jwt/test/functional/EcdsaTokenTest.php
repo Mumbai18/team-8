@@ -304,12 +304,12 @@ class EcdsaTokenTest extends \PHPUnit_Framework_TestCase
                 . ''
                 . '';
 
-        $key = '***REMOVED***' . PHP_EOL
+        $key = '' . PHP_EOL
                . '' . PHP_EOL
                . '' . PHP_EOL
                . '' . PHP_EOL
                . '' . PHP_EOL
-               . '';
+               . '-----END PUBLIC KEY-----';
 
         $keychain = new Keychain();
         $token = (new Parser())->parse((string) $data);
